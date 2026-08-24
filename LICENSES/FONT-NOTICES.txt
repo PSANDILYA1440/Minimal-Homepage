@@ -1,0 +1,11 @@
+Adwaita Sans
+
+Copyright © The GNOME Project contributors
+
+Adwaita Sans is licensed under the SIL Open Font License, Version 1.1.
+
+Source:
+https://gitlab.gnome.org/GNOME/adwaita-fonts
+
+License:
+See OFL.txt

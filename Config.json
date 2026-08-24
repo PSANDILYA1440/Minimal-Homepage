@@ -1,0 +1,46 @@
+{
+    "homepage": {
+        "name": "Minimal Homepage",
+        "theme": "oled"
+    },
+
+    "clock": {
+        "enabled": true,
+        "showSeconds": true,
+        "format": "24-hour"
+    },
+
+    "date": {
+        "enabled": true,
+        "format": "weekday-month-day-year"
+    },
+
+    "greeting": {
+        "enabled": true,
+        "morning": "Good morning",
+        "afternoon": "Good afternoon",
+        "evening": "Good evening",
+        "night": "Good night"
+    },
+
+    "search": {
+        "enabled": true,
+        "engine": "google",
+        "url": "https://www.google.com/search",
+        "placeholder": "Search Google..."
+    },
+
+    "design": {
+        "background": "#000000",
+        "text": "#e8e8e8",
+        "secondaryText": "#8a8a8a",
+        "grid": "#222222",
+        "glow": "#ffffff",
+
+        "searchBar": {
+            "width": "1400px",
+            "height": "90px",
+            "borderRadius": "45px"
+        }
+    }
+}
