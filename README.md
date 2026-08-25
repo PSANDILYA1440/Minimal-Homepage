@@ -4,6 +4,7 @@ A clean, customizable browser homepage built with HTML, CSS, and JavaScript.
 
 Designed with a minimal futuristic style featuring a dark OLED interface, time-based greetings, sun and moon icons, and a customizable search experience.
 
+## **This is Source Code from it. Now there is a website and you can set it as your default Startpage.**
 ---
 
 ## ✨ Features
