@@ -1,69 +1,45 @@
 @font-face {
-
     font-family: "Adwaita Sans";
-
-    src: url("fonts/AdwaitaSans-Regular.ttf")
-    format("truetype");
-
+    src: url("fonts/AdwaitaSans-Regular.ttf") format("truetype");
     font-weight: 400;
-
     font-style: normal;
-
 }
-
 
 
 * {
-
     box-sizing: border-box;
-
 }
 
 
-
 body {
-
     margin: 0;
-
     height: 100vh;
-
     overflow: hidden;
-
 
     background-color: #000000;
 
-
     background-image:
-
         linear-gradient(
             rgba(255,255,255,0.045) 1px,
             transparent 1px
         ),
-
         linear-gradient(
             90deg,
             rgba(255,255,255,0.045) 1px,
             transparent 1px
         );
 
-
     background-size: 50px 50px;
-
 
     color: #e8e8e8;
 
-
     font-family:
-
         "Adwaita Sans",
         sans-serif;
 
-
     transition:
-
         background 0.5s ease,
         color 0.5s ease;
-
 }
 
 
@@ -74,48 +50,38 @@ body.light {
 
     background-color: #f5f5f5;
 
-
     background-image:
-
         linear-gradient(
             rgba(0,0,0,0.05) 1px,
             transparent 1px
         ),
-
         linear-gradient(
             90deg,
             rgba(0,0,0,0.05) 1px,
             transparent 1px
         );
 
-
     color:#111111;
-
 }
 
 
+
+/* DATE */
 
 .date {
 
     position:absolute;
 
-
     top:35px;
-
 
     left:45px;
 
-
     color:#8a8a8a;
-
 
     font-size:22px;
 
-
     letter-spacing:1px;
-
 }
-
 
 
 body.light .date {
@@ -126,30 +92,24 @@ body.light .date {
 
 
 
+/* CLOCK */
+
 .clock {
 
     position:absolute;
 
-
     top:28px;
-
 
     right:45px;
 
-
     color:#e8e8e8;
-
 
     font-size:42px;
 
-
     font-weight:600;
 
-
     letter-spacing:3px;
-
 }
-
 
 
 body.light .clock {
@@ -166,26 +126,20 @@ main {
 
     height:100vh;
 
-
     display:flex;
 
-
     justify-content:center;
-
 
     align-items:center;
 
 }
 
 
-
 .center {
 
     display:flex;
 
-
     flex-direction:column;
-
 
     align-items:center;
 
@@ -199,12 +153,9 @@ main {
 
     width:90px;
 
-
     height:90px;
 
-
     margin-bottom:35px;
-
 
     position:relative;
 
@@ -212,71 +163,93 @@ main {
 
 
 
+/* MORNING SUN */
+
 .sun {
+
+    width:90px;
+
+    height:90px;
 
     background:#ffd84d;
 
-
     border-radius:50%;
-
 
     box-shadow:
 
-        0 0 35px rgba(255,216,77,0.55);
-
+        0 0 35px rgba(255,216,77,0.65);
 }
 
 
+
+/* AFTERNOON DIM SUN */
 
 .afternoon {
 
-    background:#e8c84a;
+    width:90px;
 
+    height:90px;
+
+    background:#e8c84a;
 
     border-radius:50%;
 
-
-    opacity:0.85;
-
+    opacity:0.8;
 
     box-shadow:
 
-        0 0 30px rgba(232,200,74,0.4);
-
+        0 0 30px rgba(232,200,74,0.45);
 }
 
 
+
+/* EVENING SETTING SUN */
 
 .sunset {
 
-    background:#ffb347;
+    width:90px;
 
+    height:45px;
 
-    border-radius:50%;
+    margin-top:45px;
 
+    background:#ffad4d;
 
-    transform:translateY(18px);
+    border-radius:
 
+        90px 90px 0 0;
 
     box-shadow:
 
-        0 0 35px rgba(255,179,71,0.5);
+        0 0 35px rgba(255,173,77,0.55);
 
 }
 
 
 
+/* NIGHT MOON */
+
 .moon {
 
-    background:#fff4c2;
+    width:90px;
 
+    height:90px;
 
     border-radius:50%;
 
+    background:
+
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #ffffff 85%,
+            #ffe88a 85%,
+            #ffe88a 100%
+        );
 
     box-shadow:
 
-        0 0 35px rgba(255,244,194,0.45);
+        0 0 35px rgba(255,244,194,0.55);
 
 }
 
@@ -286,29 +259,21 @@ main {
 
     content:"";
 
-
     position:absolute;
-
 
     width:90px;
 
-
     height:90px;
-
-
-    background:#000000;
-
 
     border-radius:50%;
 
-
-    left:30px;
-
+    left:32px;
 
     top:-12px;
 
-}
+    background:#000000;
 
+}
 
 
 body.light .moon::after {
@@ -317,31 +282,23 @@ body.light .moon::after {
 
 }
 
-
-
 /* GREETING */
 
 .greeting {
 
     color:#e8e8e8;
 
-
     font-size:42px;
-
 
     font-weight:500;
 
-
     letter-spacing:3px;
 
-
     margin-bottom:55px;
-
 
     text-align:center;
 
 }
-
 
 
 body.light .greeting {
@@ -352,49 +309,35 @@ body.light .greeting {
 
 
 
-/* SEARCH */
+/* SEARCH BAR */
 
 .search {
 
     width:1400px;
 
-
     height:90px;
-
 
     display:flex;
 
-
     align-items:center;
 
-
     padding:0 40px;
-
 
     background:
 
         rgba(0,0,0,0.65);
 
-
-
     border:
 
         1px solid rgba(255,255,255,0.75);
 
-
-
     border-radius:45px;
-
-
 
     box-shadow:
 
         0 0 25px rgba(255,255,255,0.12);
 
-
-
     backdrop-filter:blur(10px);
-
 
     transition:0.3s ease;
 
@@ -418,11 +361,7 @@ body.light .search {
 
         rgba(255,255,255,0.75);
 
-
-
     border-color:#333333;
-
-
 
     box-shadow:
 
@@ -432,29 +371,26 @@ body.light .search {
 
 
 
+/* SEARCH INPUT */
+
 .search input {
 
     flex:1;
 
-
     background:transparent;
-
 
     border:none;
 
-
     outline:none;
-
 
     color:white;
 
-
     font-size:32px;
-
 
     font-family:
 
         "Adwaita Sans",
+
         sans-serif;
 
 }
@@ -477,19 +413,17 @@ body.light .search input {
 
 
 
+/* SEARCH BUTTON */
+
 .search button {
 
     background:transparent;
 
-
     border:none;
-
 
     color:#e8e8e8;
 
-
     font-size:42px;
-
 
     cursor:pointer;
 
@@ -511,45 +445,31 @@ body.light .search button {
 
     position:fixed;
 
-
     bottom:30px;
-
 
     right:35px;
 
-
     width:95px;
-
 
     height:38px;
 
-
     border-radius:20px;
-
 
     border:
 
         1px solid rgba(255,255,255,0.4);
 
-
-
     background:
 
         rgba(255,255,255,0.08);
 
-
-
     color:#e8e8e8;
-
 
     font-size:16px;
 
-
     cursor:pointer;
 
-
     backdrop-filter:blur(10px);
-
 
     transition:0.3s ease;
 
@@ -569,11 +489,9 @@ body.light .theme-toggle {
 
     color:#111111;
 
-
     background:
 
         rgba(0,0,0,0.08);
-
 
     border-color:#777777;
 
@@ -581,20 +499,24 @@ body.light .theme-toggle {
 
 
 
-/* ANIMATION */
+/* ENTRY ANIMATION */
 
 .enter {
 
     opacity:0;
 
-
     animation:
 
         slideUp 1s cubic-bezier(
+
             0.16,
+
             1,
+
             0.3,
+
             1
+
         )
 
         forwards;
@@ -605,11 +527,9 @@ body.light .theme-toggle {
 
 @keyframes slideUp {
 
-
     from {
 
         opacity:0;
-
 
         transform:
 
@@ -618,11 +538,9 @@ body.light .theme-toggle {
     }
 
 
-
     to {
 
         opacity:1;
-
 
         transform:
 
