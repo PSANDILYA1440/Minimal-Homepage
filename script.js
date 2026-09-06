@@ -5,7 +5,7 @@ async function loadConfig() {
 
     try {
 
-        const response = await fetch("config.json");
+        const response = await fetch("Config.json");
 
         config = await response.json();
 
